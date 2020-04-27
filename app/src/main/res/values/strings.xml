@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Bodima</string>
+
+    <string name="action_sign_in_short">Registration</string>
+    <string name="email">Email</string>
+    <string name="name">First Name</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">LogIn</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_oldPassword">Current Password</string>
+    <string name="hint_newPassword">New Password</string>
+    <string name="hint_newPasswordConfirmation">Confirm the new password</string>
+    <string name="hint_newexpense">Title</string>
+    <string name="hint_comment">Comment</string>
+    <string name="hint_amount">Amount</string>
+    <string name="btn_login">LogIn</string>
+    <string name="btn_link_to_register">Not a member yet? Register!</string>
+    <string name="btn_link_to_login">Already an account? Connect!</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset</string>
+    <string name="btn_back">Back to the login page</string>>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="btn_continue">Continue</string>
+    <string name="lbl_forgot_password">Reset Password</string>
+    <string name="forgot_password_msg">Enter your email address and you will receive an email with additional instructions.</string>
+    <string name="create_group_description">To use BODIMA and share your expenses, Create a new group or join an existing group.</string>
+    <string name="create_group_new">Create a new Group</string>
+    <string name="create_group_join">Join a existing Group</string>
+    <string name="btn_add_expense">Add expense</string>
+    <string name="btn_modification_expense">Modify the expense</string>
+    <string name="btn_delete_expense">Delete the expense</string>
+    <string name="btn_invite_friends">Invite Friends</string>
+    <string name="btn_leave_group">Leave</string>
+    <string name="btn_remove_group">Remove</string>
+    <string name="btn_return">Return</string>
+    <string name="btn_edit">Save Changes</string>
+    <string name="auth_failed">Authentication Failed</string>
+    <string name="about_us_text">
+        This App was created as a Final Project of the Subject PH 3037-Mobile Application Development.
+    </string>
+    <string name="title_activity_dialog__about_us">Dialog_About_us</string>
+
+
+</resources>

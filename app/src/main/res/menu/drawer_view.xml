@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_group_settings"
+            android:icon="@mipmap/ic_people_black_24dp"
+            android:title="Group Settings"
+            />
+        <item
+            android:id="@+id/nav_invite_friends"
+            android:icon="@mipmap/ic_swap_horiz_black_24dp"
+            android:title="Invite Friends" />
+        <item
+            android:id="@+id/nav_editProfile"
+            android:icon="@mipmap/ic_settings_black_24dp"
+            android:title="Edit Profile" />
+        <!--<item-->
+            <!--android:id="@+id/nav_notifications"-->
+            <!--android:icon="@android:drawable/ic_notification_overlay"-->
+            <!--android:title="Notifications push" />-->
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_info"
+            android:title="About Us"
+            />
+
+        <item
+            android:id="@+id/nav_disconnect"
+            android:icon="@mipmap/power"
+            android:title="Log Out"
+            />
+
+
+    </group>
+</menu>

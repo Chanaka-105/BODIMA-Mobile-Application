@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+
+
+    >
+
+    <ImageView
+        android:id="@+id/icon_expense"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="3.5dp"
+        android:src="@drawable/ic_income"
+        />
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_toRightOf="@+id/icon_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+    <TextView
+        android:layout_toRightOf="@+id/rel1"
+        android:id="@+id/view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="12345678901234"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black"
+        tools:ignore="NotSibling" />
+
+
+    <TextView
+        android:layout_toRightOf="@+id/rel1"
+        android:id="@+id/view_payername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_title"
+        android:layout_marginBottom="3dp"
+        android:text="Paid By Poul"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif"
+        android:textSize="12dp"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/view_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="50$"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="130dp"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:id="@+id/view_category"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="Food Stuff"
+            android:textSize="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/rounded_rectangle"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

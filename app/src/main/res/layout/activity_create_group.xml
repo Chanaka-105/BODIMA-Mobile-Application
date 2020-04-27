@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20000000"
+    android:fitsSystemWindows="true"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.chanaka.bodima.CreateGroupActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:paddingBottom="0dp"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:fontFamily="serif-monospace"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textColor="@color/white"
+            android:text="To use BODIMA and share your expenses\n Create a new group or join an existing group."
+            android:textAllCaps="true"
+            android:textSize="17dp" />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/linearbackground">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="#200F7DD3"
+                    android:fontFamily="serif-monospace"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/create_group_new"
+
+                    android:textSize="18dp"
+                    android:textAllCaps="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/newgroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Name of the New Group"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+                <Button
+                    android:id="@+id/btn_newgroup"
+                    android:background="@drawable/button_background_1"
+                    android:layout_width="fill_parent"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dip"
+                    android:layout_height="50dip"
+                    android:text="Continue"
+                    android:textSize="15dp"
+                    android:stateListAnimator="@null"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:paddingHorizontal="10dp"
+    android:background="@drawable/linearbackground">
+                <TextView
+                    android:textColor="#000000"
+                   android:fontFamily="serif-monospace"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="#200F7DD3"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/create_group_join"
+                    android:textAllCaps="true"
+                    android:textSize="18dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/rejoingroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20dp"
+                        android:fontFamily="serif-monospace"
+                        android:hint="Use your ID to Join"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+</LinearLayout>
+                <Button
+                    android:id="@+id/btn_rejoingroup"
+                    android:background="@drawable/button_background_1"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dip"
+                    android:layout_height="50dip"
+                    android:text="Continue"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/btn_back_to_login"
+            android:background="@drawable/button_background_2"
+            android:layout_width="250dp"
+            android:layout_marginTop="20dip"
+            android:layout_height="50dip"
+            android:text="log in or sign up"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

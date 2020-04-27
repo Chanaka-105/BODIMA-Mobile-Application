@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txt_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:text="Are You Sure You Want To Clear"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txt_infos"
+        android:padding="5dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_below="@id/txt_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Your all saved data will delete permanently"
+        android:textSize="15dp"
+        android:textAlignment="center"/>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/txt_infos"
+    android:stateListAnimator="@null"
+    android:weightSum="2"
+    >
+    <Button
+        android:id="@+id/btn_no"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_below="@+id/txt_infos"
+        android:textColor="@color/white"
+        android:layout_width="fill_parent"
+        android:background="@drawable/dialog_button"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="50dip"
+        android:text="No"
+        android:textSize="18dp"
+        android:stateListAnimator="@null"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_yes"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_weight="1"
+        android:layout_below="@+id/btn_no"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dialog_button"
+        android:layout_height="50dip"
+        android:textColor="@color/white"
+        android:text="Yes"
+        android:textSize="18dp"
+        android:stateListAnimator="@null"
+        android:textAllCaps="false" />
+
+</LinearLayout>
+
+</RelativeLayout>

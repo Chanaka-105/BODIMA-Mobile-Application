@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#20000000"
+    android:fitsSystemWindows="true"
+    tools:context="com.chanaka.bodima.GroupSettingsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_groupe"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:elevation="0dp">
+
+        <ImageButton
+            android:id="@+id/btn_groupe_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_arrow_back_white_24dp"
+            android:background="@color/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Group Setting"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar_groupe"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="20dp">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_groupe"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:background="@drawable/linearbackground"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:paddingBottom="0dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/nom_groupe_texte"
+                android:textAllCaps="true"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="N/A"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:textSize="25dp" />
+            <Button
+                android:fontFamily="sans-serif-condensed"
+                android:background="@drawable/button_background_2"
+                android:textColor="@color/white"
+                android:id="@+id/btn_display_id"
+                android:layout_width="fill_parent"
+                android:textSize="17sp"
+                android:layout_marginTop="15dip"
+                android:layout_height="60dip"
+                android:text="@string/btn_invite_friends"
+                android:stateListAnimator="@null" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15sp">
+
+                <Button
+                    android:id="@+id/btn_leave_groupe"
+                    android:background="@drawable/button_background_2"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dip"
+                    android:textSize="17sp"
+                    android:layout_marginRight="5dip"
+                    android:layout_height="60dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_leave_group"
+                    android:stateListAnimator="@null" />
+
+                <Button
+                    android:id="@+id/btn_delete_groupe"
+                    android:fontFamily="sans-serif-condensed"
+                    android:background="@drawable/button_background_2"
+                    android:textColor="@color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="5dip"
+                    android:textSize="17sp"
+                    android:layout_height="60dip"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_remove_group"
+                    android:stateListAnimator="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearbackground"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/membres_titre"
+                android:text="Members of the Group"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+        <ListView
+        android:id="@+id/listview_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView2"
+        android:background="@drawable/linearbackground" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="#90000000"
+        android:paddingHorizontal="140dp"
+        android:paddingVertical="100dp"
+        android:visibility="gone" />
+</RelativeLayout>
